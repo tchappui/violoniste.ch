@@ -2,7 +2,7 @@
 
 ---
 
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -10,7 +10,14 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="min-h-screen flex flex-col">
+		<header class="container mx-auto px-4">
+			<h1 class="text-4xl font-bold">Mon site Astro</h1>
+		</header>
+		<footer class="bg-black text-white mt-auto">
+			<div class="container mx-auto p-4">
+				&copy 2024 - Evelyne Chappuis
+			</div>
+		</footer>
 	</body>
 </html>
