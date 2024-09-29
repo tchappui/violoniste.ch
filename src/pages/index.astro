@@ -43,7 +43,33 @@ const comments = [
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+
 		<title>Ecole de violon Evelyne Chappuis</title>
+
+		<!-- SEO Meta Tags -->
+		<meta name="description" content="Ecole de violon Evelyne Chappuis - Cours de violon à Posieux et Payerne. Professeur diplômée avec plus de 20 ans d'expérience. Que vous soyez débutant ou avancé, venez apprendre le violon dans une ambiance chaleureuse et professionnelle." />
+		<meta name="keywords" content="cours de violon, professeur de violon, Posieux, Payerne, musique classique, apprentissage du violon, école de violon, Evelyne Chappuis, leçons de violon" />
+		<meta name="author" content="Evelyne Chappuis" />
+		<link rel="canonical" href="https://violoniste.ch" />
+
+		<!-- Open Graph Meta Tags -->
+		<meta property="og:title" content="Ecole de violon Evelyne Chappuis" />
+		<meta property="og:description" content="Professeur diplômée de la Haute Ecole de Musique de Fribourg avec +20 ans d'expérience. Cours de violon à Posieux et Payerne." />
+		<meta property="og:image" content="https://violoniste.ch/images/violonpiano.jpg" />
+		<meta property="og:url" content="https://violoniste.ch" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Ecole de violon Evelyne Chappuis" />
+		<meta property="og:locale" content="fr_FR" />
+
+		<!-- Twitter Card Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Ecole de violon Evelyne Chappuis" />
+		<meta name="twitter:description" content="Cours de violon à Posieux et Payerne. Professeur diplômée avec +20 ans d'expérience. Rejoignez-nous pour apprendre à jouer du violon avec passion et méthode." />
+		<meta name="twitter:image" content="https://violoniste.ch/images/violonpiano.jpg" />
+		<meta name="twitter:site" content="@violoniste_ch" />
+		<meta name="twitter:creator" content="@violoniste_ch" />
+
+		<!-- Stylesheet -->
 		<link rel="stylesheet" href="https://use.typekit.net/jym6pfb.css">
 	</head>
 	<body class="min-h-screen flex flex-col bg-black">
@@ -60,10 +86,22 @@ const comments = [
 				<p class="mt-4 text-2xl text-white w-full text-center">Professeur diplômée de la Haute Ecole de Musique de Fribourg avec +20 ans d'expérience</p>
 				<p class="mt-4 text-white w-full text-center">Cours de violon à Posieux (entre Fribourg et Bulle) et Payerne</p>
 
-				<div class="w-full flex justify-center space-x-4 mt-8">
-					<a class="block p-4 bg-primary hover:bg-primary-500 border-2 border-primary hover:border-primary-500 rounded-lg" href="https://wa.me/41763424035" target="_blank">Contactez-moi !</a>
-
-					<a class="block p-4 text-primary hover:text-primary-500 border-2 border-primary hover:border-primary-500 rounded-lg" href="#qu-en-pensent-mes-eleves">Que disent mes élèves ?</a>
+				<!-- Boutons en colonne -->
+				<div class="w-full flex flex-col items-center space-y-4 mt-8">
+					<a id="contact-email-link" class="block p-4 bg-primary hover:bg-primary-500 border-2 border-primary hover:border-primary-500 rounded-lg w-full max-w-xs text-center flex items-center justify-center" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-6 h-6" fill="currentColor" viewBox="0 0 16 16">
+							<path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+							<path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+						</svg>
+						Contact par Email
+					</a>
+					<a id="contact-whatsapp-link" class="block p-4 bg-primary hover:bg-primary-500 border-2 border-primary hover:border-primary-500 rounded-lg w-full max-w-xs text-center flex items-center justify-center" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-6 h-6" fill="currentColor" viewBox="0 0 16 16">
+							<path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+						</svg>
+						Contact par WhatsApp
+					</a>
+					<a class="block p-4 text-primary hover:text-primary-500 border-2 border-primary hover:border-primary-500 rounded-lg w-full max-w-xs text-center" href="#qu-en-pensent-mes-eleves">Que disent mes élèves ?</a>
 				</div>
 			</div>
 		</header>
@@ -73,8 +111,6 @@ const comments = [
 			<div class="absolute inset-0 bg-gradient-to-l from-black to-40% to-transparent"></div>
 			<div class="absolute inset-0 bg-gradient-to-b from-black to-40% to-transparent"></div>
 			<div class="absolute inset-0 bg-gradient-to-t from-black to-20% to-transparent"></div>
-
-			<!-- <div class="absolute inset-0 bg-gradient-to-b from-black via-50% via-transparent to-black"></div> -->
 
 			<div class="container mx-auto max-h-[50svp] overflow-hidden">
 				<img class="w-full h-full object-cover object-center" src="/images/violonpiano.jpg" alt="Photo de mon violon sur un piano">
@@ -88,14 +124,62 @@ const comments = [
 				{comments.map((comment) => (
 					<Quote text={comment.text} author={comment.author} />
 				))}
-
 			</div>
 		</section>
 
 		<footer class="bg-slate-950 text-white">
 			<div class="container mx-auto p-4 text-center">
-				&copy 2024 - Evelyne Chappuis
+				<h2 class="text-primary font-cursive text-2xl mb-4">Evelyne Chappuis</h2>
+				<p>Route de Fribourg 66</p>
+				<p>CH-1725 Posieux</p>
+				<p>
+					<span id="phone">Tél: <a class="text-primary hover:underline-offset-2 hover:underline" id="footer-whatsapp-link" href="#">[Numéro WhatsApp]</a></span>
+				</p>
+				<p>
+					<span id="email">Email: <a class="text-primary hover:underline-offset-2 hover:underline" id="footer-email-link" href="#">[Adresse Email]</a></span>
+				</p>
+				<div class="container mx-auto mt-8 p-4 text-center">
+					&copy 2024 - Evelyne Chappuis
+				</div>
 			</div>
 		</footer>
+
+		<!-- JavaScript to handle contact link redirection and obfuscation -->
+		<script>
+			// Fonction pour reconstruire les informations de contact en utilisant des entités HTML
+			function decodeEmail() {
+				const email = "&#101;&#118;&#101;&#108;&#121;&#110;&#101;" + "&#64;" + "&#118;&#105;&#111;&#108;&#111;&#110;&#105;&#115;&#116;&#101;&#46;&#99;&#104;";
+				return email.replace(/&#(\d+);/g, (_, dec) => String.fromCharCode(dec));
+			}
+
+			function decodeWhatsApp() {
+				// Numéro WhatsApp obfusqué par segments
+				const whatsappSegments = ["&#43;", "4", "1", "7", "6", "3", "4", "2", "4", "0", "3", "5"];
+				const whatsapp = whatsappSegments.map(segment => segment.replace(/&#(\d+);/g, (_, dec) => String.fromCharCode(dec))).join('');
+				return "https://wa.me/" + whatsapp.replace(/\+/g, "");
+			}
+
+			// Modifier les liens de contact
+			document.addEventListener('DOMContentLoaded', () => {
+				const contactEmailLink = document.getElementById('contact-email-link');
+				const contactWhatsAppLink = document.getElementById('contact-whatsapp-link');
+				const footerEmailLink = document.getElementById('footer-email-link');
+				const footerWhatsAppLink = document.getElementById('footer-whatsapp-link');
+
+				// Reconstituer les adresses email et WhatsApp
+				const email = decodeEmail();
+				const whatsappLink = decodeWhatsApp();
+
+				// Mettre à jour les liens dans le footer et le header
+				contactEmailLink.href = "mailto:" + email;
+				contactWhatsAppLink.href = whatsappLink;
+				footerEmailLink.href = "mailto:" + email;
+				footerWhatsAppLink.href = whatsappLink;
+
+				// Mettre à jour le texte affiché
+				footerEmailLink.innerHTML = email;
+				footerWhatsAppLink.innerHTML = whatsappLink.replace("https://wa.me/", "+41 ");
+			});
+		</script>
 	</body>
 </html>
