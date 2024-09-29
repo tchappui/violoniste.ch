@@ -2,7 +2,7 @@
 const comments = [
     {
       text: `Je n'avais plus touché mon violon depuis l'adolescence, soit presque 30 ans.
-      Je suis ravie d'avoir repris des cours grâce à l'enseignement de Madame Chappuis.
+      Je suis ravi d'avoir repris des cours grâce à l'enseignement de Madame Chappuis.
       Les leçons sont structurées de manière à remettre en place les indispensables
       bases techniques, mais surtout à (re)trouver rapidement le plaisir de jouer.
       C'est mon cas. La disponibilité de Madame Chappuis est très appréciable pour
